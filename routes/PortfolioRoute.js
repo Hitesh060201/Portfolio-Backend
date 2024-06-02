@@ -1,5 +1,5 @@
 const express = require("express");
-const { sendEmailController } = require("../controllers/portfolioContoller");
+import { sendEmailController } from "../controllers/PortfolioController";
 
 //router object
 const router = express.Router();
