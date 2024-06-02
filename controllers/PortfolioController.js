@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport(
   })
 );
 
-const sendEmailController = (req, res) => {
+export const sendEmailController = (req, res) => {
   try {
     const { name, email, msg } = req.body;
 
@@ -50,4 +50,3 @@ const sendEmailController = (req, res) => {
   }
 };
 
-module.exports = { sendEmailController };
