@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport(
   })
 );
 
-export const sendEmailController = (req, res) => {
+const sendEmailController = (req, res) => {
   try {
     const { name, email, msg } = req.body;
 
@@ -49,4 +49,6 @@ export const sendEmailController = (req, res) => {
     });
   }
 };
+
+export default sendEmailController;
 
