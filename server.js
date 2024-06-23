@@ -1,6 +1,7 @@
-const express =require('express')
-const cors = require('cors')
-const dotenv =require('dotenv');
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv'
+import router from './routes/PortfolioRoute.js';
 
 
 //dotenv configuration
@@ -17,11 +18,11 @@ app.use(express.json());
 
 
 //routes
-app.use("/api/v1/portfolio",require("./routes/PortfolioRoute"))
+app.use("/api/v1/portfolio", router)
 
 
 //port
-const PORT =process.env.PORT || 8080
+const PORT =process.env.PORT || 9000
 
 
 

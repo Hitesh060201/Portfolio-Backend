@@ -1,5 +1,5 @@
-const nodemailer = require("nodemailer");
-const sendGridTransport = require("nodemailer-sendgrid-transport");
+import nodemailer from "nodemailer";
+import sendGridTransport from "nodemailer-sendgrid-transport";
 
 //transport
 const transporter = nodemailer.createTransport(

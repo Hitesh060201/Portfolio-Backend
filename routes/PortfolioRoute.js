@@ -1,5 +1,5 @@
-const express = require("express");
-const { sendEmailController } = require('../controllers/PortfolioController');
+import express from 'express'
+import sendEmailController from "../controllers/PortfolioController.js";
 
 //router object
 const router = express.Router();
@@ -8,4 +8,4 @@ const router = express.Router();
 router.post("/sendEmail", sendEmailController);
 
 // /export
-module.exports = router;
+export default router;
